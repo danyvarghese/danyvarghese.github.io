@@ -12,11 +12,21 @@
         .navbar a:hover { background-color: #575757; }
         .container { padding: 20px; max-width: 800px; margin: auto; }
 
-         /* Image styling */
-        .profile-image { width: 150px; height: auto; border-radius: 50%; margin-bottom: 20px; }
-        
-        /* Section styling */
-        .bio { margin-top: 20px; }
+         /* Flex container for image and text alignment */
+        .bio-flex {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Space between image and text */
+            margin-top: 20px;
+        }
+
+        /* Styling for the profile image */
+        .profile-image { 
+            width: 150px; 
+            height: auto; 
+            border-radius: 50%; 
+            flex-shrink: 0; /* Prevents image from resizing */
+        }
         
     </style>
 </head>
@@ -33,12 +43,13 @@
 
     <!-- Home page content -->
     <div class="container">
-       <div class="bio">
-            <img src="Dany-Varghese-2.png" alt="Dr. Dany Varghese" class="profile-image">
+        <div class="bio-flex">
+            <img src="danyvarghese.jpg" alt="Dr. Dany Varghese" class="profile-image">
             <p><strong>Dr. Dany Varghese, PhD</strong><br>
             Research Fellow<br>
             Department of Computer Science<br>
             University of Surrey, Guildford</p>
+        </div>
 
             <p>Dr. Dany Varghese is a Research Fellow in the Department of Computer Science at the University of Surrey, specializing in the domains of <strong>Learning and Reasoning</strong> using <strong>Inductive Logic Programming (ILP)</strong>. His research focuses on developing advanced methods for machine learning that integrate logical reasoning, enabling intelligent systems to learn from data and apply that knowledge in a way that mirrors human reasoning processes.</p>
 
@@ -46,7 +57,7 @@
                 ILP principles. <a href="https://github.com/danyvarghese/PyGol">PyGol</a> allows for transparent and interpretable machine learning models, making it possible for end-users to understand and trust the decisions made by artificial intelligence systems. PyGol is especially relevant in fields where interpretability and accountability are critical, such as healthcare, finance, and autonomous systems.</p>
 
             <p>With a strong commitment to advancing the fields of AI and ML, Dr. Varghese has contributed extensively to research through publications, collaborative projects, and mentoring upcoming researchers. This website provides an overview of his work in research, teaching, and professional contributions.</p>
-        </div>
+        
    
     </div>
 

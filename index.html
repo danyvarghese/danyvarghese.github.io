@@ -1,1 +1,103 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Website</title>
+    <style>
+        /* Basic styling for layout and appearance */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Styling for navigation menu */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        /* Container for sections */
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Section headers */
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation menu -->
+    <div class="navbar">
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Main content sections -->
+    <div class="container">
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>Here you can list your academic publications. Include links to articles, journals, or conference proceedings if available.</p>
+            <ul>
+                <li>Author A, Author B. Title of the Paper. <em>Journal Name</em>, Year.</li>
+                <li>Author C, Author D. Title of the Paper. <em>Conference Name</em>, Year.</li>
+                <!-- Add more as needed -->
+            </ul>
+        </section>
+
+        <!-- Teaching Section -->
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <p>In this section, you can provide details about the courses you teach or have taught, along with a brief description of each course.</p>
+            <ul>
+                <li><strong>Course Name 1</strong>: Brief description of the course, topics covered, etc.</li>
+                <li><strong>Course Name 2</strong>: Brief description of the course, topics covered, etc.</li>
+                <!-- Add more as needed -->
+            </ul>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv">
+            <h2>CV</h2>
+            <p>You can include a downloadable link to your CV here or provide an overview of your academic and professional experience.</p>
+            <p><a href="CV_link_here.pdf" target="_blank">Download CV</a></p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Provide your contact information here, such as your email address and office location.</p>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Office: Room Number, Department, Institution</p>
+        </section>
+    </div>
+
+</body>
+</html>

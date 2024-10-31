@@ -25,7 +25,7 @@
 
         /* Style for each publication */
         .publication {
-            margin-bottom: 20px;
+            margin-bottom: -20px;
         }
 
         /* Collapsible content styling */
@@ -44,8 +44,8 @@
     font-size: 1em;
     color: #ffffff;
     background-color: #0073e6;
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 1px 1px;
+    border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
@@ -75,13 +75,13 @@
 
     <!-- Home page content -->
     <div class="container">
-        <h2>2024</h2>
+        <h2>2023</h2>
         
         <div class="publication">
             <p class="title" onclick="toggleDetails('pub1')">Few-Shot Learning of Diagnostic Rules for Neurodegenerative Diseases Using Inductive Logic Programming</p>
             <div class="details" id="pub1">
-            <p><strong>Authors:</strong> Dany Varghese, Roman Bauer, Alireza Tamaddoni-Nezhad </p>
-            <p style="text-align: justify;"><strong>Abstract:</strong> Traditional machine learning methods heavily rely on large amounts of labelled
+                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Roman Bauer, Alireza Tamaddoni-Nezhad </p>
+                <p style="text-align: justify;"><strong>Abstract:</strong> Traditional machine learning methods heavily rely on large amounts of labelled
                 data for effective generalisation, posing a challenge in few-shot learning scenarios. 
                 In many real-world applications, acquiring large amounts of training data can be difficult or impossible. 
                 This paper presents an efficient and explainable method for few-shot 
@@ -98,10 +98,190 @@
                 performance compared to a range of other machine learning algorithms.
                 This research contributes to the field of few-shot learning using ILP and 
                 paves the way for addressing challenging real-world problems.</p>
-            <p><strong>Link:</strong> <a href="https://link.springer.com/chapter/10.1007/978-3-031-49299-0_8" target="_blank">View Publication</a></p>
+                <p><strong>Link:</strong> <a href="https://link.springer.com/chapter/10.1007/978-3-031-49299-0_8" target="_blank">View Publication</a></p>
+            </div> 
         </div>
-            
-    </div>
+        
+        
+        <div class="publication">
+            <p class="title" onclick="toggleDetails('pub2')">Unravelling the web of dark interactions: 
+            Explainable inference of the diversity of microbial interactions</p>
+            <div class="details" id="pub2">
+                <p><strong>Authors:</strong> Didac Barroso-Bergada, Alireza Tamaddoni-Nezhad,
+                 <b>Dany Varghese</b>, Corinne Vacher, Nika Galic, Valérie Laval, 
+                 Frédéric Suffert, David A Bohan </p>
+                <p style="text-align: justify;"><strong>Abstract:</strong> The functional diversity of microbial 
+                communities emerges from a combination of the great number of species and the many interaction 
+                types, such as competition, mutualism, predation or parasitism, in microbial
+                ecological networks. Understanding the relationship between microbial networks
+                 and the functions delivered by the microbial communities is a key challenge 
+                 for microbial ecology, particularly as so many of these interactions are
+                  difficult to observe and characterise. We believe that this ’Dark Web’ of 
+                   interactions could be unravelled using an explainable machine learning approach,
+                    called Abductive/Inductive Logic Programming (A/ILP) in the R package InfIntE, 
+                    which uses mechanistic rules (interaction hypotheses) to infer directly the network
+                     structure and interaction types. Here we attempt to unravel the dark web of the
+                      plant microbiome in metabarcoding data sampled from the grapevine foliar microbiome.
+                       Using synthetic, simulated data, we first show that it is possible to satisfactorily 
+                       reconstruct microbial networks using explainable machine learning.
+                        Then we confirm that the dark web of the grapevine microbiome is diverse, 
+                        being composed of a range of interaction types consistent with the literature.
+                         This first attempt to use explainable machine learning to infer microbial 
+                         interaction networks advances our understanding of the ecological processes 
+                         that occur in microbial communities and allows us to hypothesise specific
+                          types of interaction within the grapevine microbiome. This work will have 
+                          potentially valuable applications, such as the discovery of antagonistic interactions
+                           that might be used to identify potential biological control agents within 
+                           the microbiome.</p>
+                <p><strong>Link:</strong> <a href="https://www.sciencedirect.com/science/article/abs/pii/S0065250423000053?dgcid=rss_sd_all target="_blank">View Publication</a></p>
+            </div> 
+        </div>
+        
+        <h2>2022</h2>
+        
+        <div class="publication">
+            <p class="title" onclick="toggleDetails('pub3')">Few-shot learning for plant disease classification using ILP</p>
+            <div class="details" id="pub3">
+                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Uzma Patel, Paul Krause, Alireza Tamaddoni-Nezhad </p>
+                <p style="text-align: justify;"><strong>Abstract:</strong> 
+        Plant diseases are one of the main causes of crop loss in agriculture.
+     Machine Learning, in particular statistical and neural nets (NNs) approaches, 
+     have been used to help farmers identify plant diseases. However, since new diseases 
+     continue to appear in agriculture due to climate change and other factors, 
+     we need more data-efficient approaches to identify and classify new diseases 
+     as early as possible. Even though statistical machine learning approaches and 
+     neural nets have demonstrated state-of-the-art results on many classification tasks, 
+     they usually require a large amount of training data. This may not be available for 
+     emergent plant diseases. So, data-efficient approaches are essential for an early 
+     and precise diagnosis of new plant diseases and necessary to prevent the disease’s spread. 
+     This study explores a data-efficient Inductive Logic Programming (ILP) approach for 
+     plant disease classification. We compare some ILP algorithms (including our new implementation, 
+     PyGol) with several statistical and neural-net based machine learning algorithms on the task of 
+     tomato plant disease classification with varying sizes of training data set (6, 10, 50 and 100 
+     training images per disease class). The results suggest that ILP outperforms other learning
+      algorithms and this is more evident when fewer training data are available.</p>
+                <p><strong>Link:</strong> <a href="https://link.springer.com/chapter/10.1007/978-3-031-35641-4_26" target="_blank">View Publication</a></p>
+            </div> 
+        </div>
+        
+        <div class="publication">
+            <p class="title" onclick="toggleDetails('pub4')">Efficient abductive learning of microbial interactions using meta inverse entailment</p>
+            <div class="details" id="pub4">
+                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Didac Barroso-Bergada, David A Bohan, Alireza Tamaddoni-Nezhad </p>
+                <p style="text-align: justify;"><strong>Abstract:</strong> 
+        Abductive reasoning plays an essential part in day-to-day problem-solving. 
+        It has been considered a powerful mechanism for hypothetical reasoning in the 
+        presence of incomplete knowledge; a form of “common sense” reasoning. In machine learning, 
+        abduction is viewed as a conceptual method in which data and the bond that jointly brings 
+        the different types of inference. The traditional Mode-Directed Inverse Entailment (MDIE) 
+        based systems such as Progol and Aleph for the abduction were not data-efficient 
+        since their execution time with the large dataset was too long. We present 
+        a new abductive learning procedure using Meta Inverse Entailment (MIE).
+         MIE is similar to Mode-Directed Inverse Entailment (MDIE) but does not 
+         require user-defined mode declarations. In this paper, 
+         we use an implementation of MIE in Python called PyGol. 
+         We evaluate and compare this approach to reveal the microbial 
+         interactions in the ecosystem with state-of-art-of methods for abduction, 
+         such as Progol and Aleph. Our results show that PyGol has comparable 
+         predictive accuracies but is significantly faster than Progol and Aleph.
+
+</p>
+                <p><strong>Link:</strong> <a href="https://link.springer.com/chapter/10.1007/978-3-031-55630-2_10" target="_blank">View Publication</a></p>
+            </div> 
+        </div>
+        
+        <h2>2021</h2>
+        
+         <div class="publication">
+             <p class="title" onclick="toggleDetails('pub5')">Human-like rule learning from images
+              using one-shot hypothesis derivation</p>
+             <div class="details" id="pub5">
+                 <p><strong>Authors:</strong> <b> Dany Varghese</b>,Roman Bauer, Daniel Baxter-Beard, Stephen Muggleton, Alireza Tamaddoni-Nezhad </p>
+                 <p style="text-align: justify;"><strong>Abstract:</strong> 
+         Unlike most computer vision approaches, which depend on hundreds or thousands of 
+         training images, humans can typically learn from a single visual example. 
+         Humans achieve this ability using background knowledge. 
+         Rule-based machine learning approaches such as Inductive Logic Programming (ILP) 
+         provide a framework for incorporating domain specific background knowledge. 
+         These approaches have the potential for human-like learning from small 
+         data or even one-shot learning, i.e. learning from a single positive example. 
+         By contrast, statistics based computer vision algorithms, including Deep Learning, 
+         have no general mechanisms for incorporating background knowledge. 
+         This paper presents an approach for one-shot rule learning called 
+         One-Shot Hypothesis Derivation (OSHD) based on using a logic program declarative bias. 
+         We apply this approach to two challenging human-like computer vision tasks: 1)
+          Malayalam character recognition and 2) neurological diagnosis using retinal images. 
+          We compare our results with a state-of-the-art Deep Learning approach, called Siamese Network, 
+          developed for one-shot learning. 
+          The results suggest that our approach can generate human-understandable 
+          rules and outperforms the deep learning approach with a significantly higher average 
+          predictive accuracy.
+
+ </p>
+                 <p><strong>Link:</strong> <a href="https://link.springer.com/chapter/10.1007/978-3-030-97454-1_17" target="_blank">View Publication</a></p>
+             </div> 
+         </div>
+        
+    <h2>2020</h2>
+       
+        <div class="publication">
+            <p class="title" onclick="toggleDetails('pub6')">
+One-shot rule learning for challenging character recognition</p>
+            <div class="details" id="pub6">
+                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Alireza Tamaddoni-Nezhad </p>
+                <p style="text-align: justify;"><strong>Abstract:</strong> 
+        Unlike most of computer vision approaches which depend on hundreds or thousands of 
+        training images, humans can typically learn from a single visual example. 
+        Humans achieve this ability using background knowledge. Rule-based machine
+         learning approaches such as In-ductive Logic Programming (ILP) provide a 
+         framework for incorporating domain specific background knowledge.
+          These approaches have the potential for human-like learning from 
+          small data or even one-shot learning, i.e. learning from a single 
+          positive example. By contrast, statistics based computer vision algorithms,
+           including Deep Learning, have no general mechanisms for incorporating 
+           background knowledge. In this paper, we present an approach for one-shot
+          rule learning called One-Shot Hypothesis Derivation (OSHD) which is based 
+          on using a logic program declarative bias. We apply this approach to the 
+          challenging task of Malayalam character recognition. This is a challenging 
+          task due to spherical and complex structure of Malayalam handwritten language. 
+          Unlike for other languages, there is currently no efficient algorithm for 
+          Malayalam handwritten recognition. We compare our results with a state-of-the-art 
+          Deep Learning approach, called Siamese Network, which has been developed for one-shot
+           learning. The results suggest that our approach can generate human-understandable 
+           rules and also outperforms the deep learning approach with a significantly higher
+            average predictive accuracy.
+
+</p>
+                <p><strong>Link:</strong> <a href="https://www.researchgate.net/publication/343737809_One-Shot_Rule_Learning_for_Challenging_Character_Recognition" target="_blank">View Publication</a></p>
+            </div> 
+        </div>
+        
+    <h2>Pre-2020</h2>
+    
+    <p><strong>Please refer <a href="https://scholar.google.com/citations?user=Z1KvV_YAAAAJ&hl=en"> google scholar</a> for more details</strong>
+    
+    <ol>
+        <!-- Example Publication 1 -->
+        <li>
+           A Novel Approach for Diagnosing Alzheimer's Disease Using SVM
+        </li>
+        
+        <li>
+        An incremental semi-supervised approach for visual domain adaptation
+        </li>
+        
+        <li>
+        A Novel Approach for Single Image Super Resolution using Statistical Mathematical Model
+        </li>
+        
+        <li>
+        Cognitive computing simulator-COMPASS
+        </li>
+        
+       
+    </ol>
+        
+        
     </div>
 
 

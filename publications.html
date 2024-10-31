@@ -40,15 +40,26 @@
 
         /* Publication title style */
         .title {
-            cursor: pointer;
-            color: #0066cc;
-            text-decoration: underline;
-        }
+    display: inline-block;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #0073e6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
 
-        /* Hover effect for title */
-        .title:hover {
-            color: #004499;
-        }
+.title:hover {
+    background-color: #005bb5;
+    transform: scale(1.02);
+}
+
+.title:active {
+    background-color: #003f7f;
+    transform: scale(0.98);
+}
     </style>
 </head>
 <body>

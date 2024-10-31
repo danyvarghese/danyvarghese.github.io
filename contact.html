@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dany Varghese</title>
+    <style>
+        /* Basic styling for layout and appearance */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        .navbar { background-color: #333; overflow: hidden; }
+        .navbar a { float: left; display: block; color: #fff; text-align: center; padding: 14px 20px; text-decoration: none; }
+        .navbar a:hover { background-color: #575757; }
+        .container { padding: 20px; max-width: 800px; margin: auto; }
+
+         /* Flex container for image and text alignment */
+        .bio-flex {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Space between image and text */
+            margin-top: 20px;
+        }
+
+        /* Styling for the profile image */
+        .profile-image { 
+            width: 150px; 
+            height: auto; 
+            border-radius: 50%; 
+            flex-shrink: 0; /* Prevents image from resizing */
+        }
+        
+         /* Styling for the contact section */
+        .contact-section {
+            margin-top: 20px;
+        }
+
+        /* Styling for each contact item */
+        .contact-item {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        /* Email and link styling */
+        .contact-link {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            color: #005bb5;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation menu -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Home page content -->
+    <div class="container">
+        <h1>Contact</h1>
+
+    <div class="contact-section">
+        <div class="contact-item">
+            <strong>Official Email:</strong>
+            <a href="mailto:dany.varghese@surrey.ac.uk" class="contact-link">dany.varghese@surrey.ac.uk</a>
+        </div>
+
+        <div class="contact-item">
+            <strong>Personal Email:</strong>
+            <a href="mailto:dany.incito@gmail.com" class="contact-link">dany.incito@gmail.com</a>
+        </div>
+
+        <div class="contact-item">
+            <strong>LinkedIn Page:</strong>
+            <a href="https://linkedin.com/in/dany-varghese-phd-a4b2594b" target="_blank" class="contact-link">Dany Varghese</a>
+        </div>
+    </div>
+   
+    </div>
+
+</body>
+</html>

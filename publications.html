@@ -18,6 +18,37 @@
             padding-bottom: 5px;
             margin-bottom: 20px;
         }
+
+         h1 {
+            text-align: center;
+        }
+
+        /* Style for each publication */
+        .publication {
+            margin-bottom: 20px;
+        }
+
+        /* Collapsible content styling */
+        .details {
+            display: none;
+            padding-left: 20px;
+            border-left: 2px solid #ddd;
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Publication title style */
+        .title {
+            cursor: pointer;
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+        /* Hover effect for title */
+        .title:hover {
+            color: #004499;
+        }
     </style>
 </head>
 <body>
@@ -34,7 +65,16 @@
     <!-- Home page content -->
     <div class="container">
         <h2>2024</h2>
-        <p>This website provides an overview of my academic work, including my publications, teaching, CV, and contact information. Use the navigation menu to explore each section.</p>
+        
+        <div class="publication">
+            <p class="title" onclick="toggleDetails('pub1')">Title of Publication 1</p>
+            <div class="details" id="pub1">
+            <p><strong>Authors:</strong> Author A, Author B, Author C</p>
+            <p><strong>Abstract:</strong> This is a brief summary of Publication 1. It discusses the key findings and implications of the study.</p>
+            <p><strong>Link:</strong> <a href="https://example.com/publication1" target="_blank">View Publication</a></p>
+        </div>
+            
+    </div>
     </div>
 
 </body>

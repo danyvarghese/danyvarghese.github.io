@@ -75,12 +75,89 @@
 
     <!-- Home page content -->
     <div class="container">
+    
+    
+     <h2>2024</h2>
+     
+     <div class="publication">
+         <p class="title" onclick="toggleDetails('pub20241')">One-Shot Learning of Autonomous Behaviour: A Meta Inverse Entailment approach</p>
+         <div class="details" id="pub20241">
+             <p><strong>Authors:</strong> <b> Dany Varghese</b>, Daniel Cyrus, Stassa Patsantzis, James Trewern, Alfie Anthony
+Treloar, Alan Hunter and Alireza Tamaddoni-Nezhad </p>
+             <p style="text-align: justify;"><strong>Abstract:</strong> "One-shot learning" traditionally 
+             
+             refers to classifying a single instance using a machine learning model pre-trained on
+              extensive datasets. In contrast, Meta Inverse Entailment (MIE), a type of Inductive 
+             Logic Programming (ILP), can generate complex logic programs from just a single positive
+             example and minimal background knowledge without prior extensive training. This approach 
+             offers a human-centred form of machine learning that is more controllable, reliable, 
+             and comprehensible due to its small training data size and the inherent interpretability of 
+             logic programs. We use PyGol, a Python-based implementation of Meta Inverse Entailment, and 
+             compare its performance with ExpGen-PPO, a leading deep reinforcement learning system. 
+             Our experiments focus on two domains: maze-solving and obstacle avoidance for mobile 
+             robotics. In both domains, we first train the systems in simplified environments without 
+             obstacles and then test their ability to generalise to more complex environments with obstacles.
+              Our results show that PyGol effectively learns generalisable solutions from a single example 
+              in both domains, whereas ExpGen-PPO requires more training and significantly more exploration
+               to achieve similar performance.
+</p>
+             <p><strong>Link:</strong> <a href="" target="_blank">In-Press</a></p>
+         </div> 
+     </div>
+     
+     <div class="publication">
+         <p class="title" onclick="toggleDetails('pub20242')">Towards enhancing LLMs with 
+         logic-based reasoning: A Meta Inverse Entailment approach</p>
+         <div class="details" id="pub20242">
+             <p><strong>Authors:</strong> <b> Dany Varghese</b>, Ghazal Afroozi Milani, and Alireza Tamaddoni-Nezhad </p>
+             <p style="text-align: justify;"><strong>Abstract:</strong> Large Language Models (LLMs) have
+     achieved remarkable success in various natural language processing tasks. However, 
+     their ability to perform tasks requiring formal representation and reasoning remains 
+     limited. This paper explores the integration of Meta Inverse Entailment (MIE) with LLMs to 
+     enhance their reasoning capabilities. In our experiments, we examine a hybrid GPT-MIE model 
+     on a simplified natural language grammar. The results suggest that the accuracy of GPT is 
+     significantly improved when it incorporates the grammar learned using MIE. This hybrid 
+     approach demonstrates the potential of combining LLMs' linguistic proficiency with MIE's 
+     rigorous formalism, leading to better performance in tasks demanding logical representation 
+     and reasoning.</p>
+             
+             <p><strong>Link:</strong> <a href="" target="_blank">In-Press</a></p>
+         </div> 
+     </div>
+     
+     <div class="publication">
+         <p class="title" onclick="toggleDetails('pub20243')">An Inductive Logic Programming 
+         Approach for Feature-Range Discovery</p>
+         <div class="details" id="pub20243">
+             <p><strong>Authors:</strong> Daniel Cyrus, <b> Dany Varghese</b> and Alireza Tamaddoni-Nezhad </p>
+             <p style="text-align: justify;"><strong>Abstract:</strong> In this paper, 
+             we present NumLog, an Inductive Logic Programming (ILP) system designed for 
+             feature range discovery. NumLog generates quantitative rules with clear confidence bounds 
+             to discover feature-range values from examples. Our approach focuses on generating rules
+              with minimal complexity from numerical values, ensuring the assessment of methods that 
+              could impact accuracy and comprehensibility.
+Traditional ILP systems, especially those intersecting with computer vision, struggle with numerical data.
+ This convergence presents unique challenges, often hindering the generation of meaningful insights due to
+  the limited capabilities of conventional ILP systems to handle numerical values.
+NumLog stands out by incorporating an advanced range discovery mechanism that generates low-complexity 
+rules while maintaining high accuracy and comprehensibility. This enhancement significantly 
+improves interpretability, promoting more effective human-machine learning collaboration.
+We compare NumLog with the state-of-the-art ILP systems such as NumSynth and Aleph and conduct 
+comprehensive experiments on several datasets. We evaluated our approach by measuring accuracy, 
+precision, F1 score, and rule complexity to demonstrate the effectiveness of the methodology.
+</p>
+             <p><strong>Link:</strong> <a href="https://link.springer.com/chapter/10.1007/978-3-031-49299-0_8" target="_blank">View Publication</a></p>
+         </div> 
+     </div>
+     
+     
+     
         <h2>2023</h2>
         
         <div class="publication">
             <p class="title" onclick="toggleDetails('pub1')">Few-Shot Learning of Diagnostic Rules for Neurodegenerative Diseases Using Inductive Logic Programming</p>
             <div class="details" id="pub1">
-                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Roman Bauer, Alireza Tamaddoni-Nezhad </p>
+                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Roman Bauer and Alireza Tamaddoni-Nezhad </p>
                 <p style="text-align: justify;"><strong>Abstract:</strong> Traditional machine learning methods heavily rely on large amounts of labelled
                 data for effective generalisation, posing a challenge in few-shot learning scenarios. 
                 In many real-world applications, acquiring large amounts of training data can be difficult or impossible. 
@@ -109,7 +186,7 @@
             <div class="details" id="pub2">
                 <p><strong>Authors:</strong> Didac Barroso-Bergada, Alireza Tamaddoni-Nezhad,
                  <b>Dany Varghese</b>, Corinne Vacher, Nika Galic, Valérie Laval, 
-                 Frédéric Suffert, David A Bohan </p>
+                 Frédéric Suffert and David A Bohan </p>
                 <p style="text-align: justify;"><strong>Abstract:</strong> The functional diversity of microbial 
                 communities emerges from a combination of the great number of species and the many interaction 
                 types, such as competition, mutualism, predation or parasitism, in microbial
@@ -142,7 +219,7 @@
         <div class="publication">
             <p class="title" onclick="toggleDetails('pub3')">Few-shot learning for plant disease classification using ILP</p>
             <div class="details" id="pub3">
-                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Uzma Patel, Paul Krause, Alireza Tamaddoni-Nezhad </p>
+                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Uzma Patel, Paul Krause and Alireza Tamaddoni-Nezhad </p>
                 <p style="text-align: justify;"><strong>Abstract:</strong> 
         Plant diseases are one of the main causes of crop loss in agriculture.
      Machine Learning, in particular statistical and neural nets (NNs) approaches, 
@@ -167,7 +244,7 @@
         <div class="publication">
             <p class="title" onclick="toggleDetails('pub4')">Efficient abductive learning of microbial interactions using meta inverse entailment</p>
             <div class="details" id="pub4">
-                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Didac Barroso-Bergada, David A Bohan, Alireza Tamaddoni-Nezhad </p>
+                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Didac Barroso-Bergada, David A Bohan and Alireza Tamaddoni-Nezhad </p>
                 <p style="text-align: justify;"><strong>Abstract:</strong> 
         Abductive reasoning plays an essential part in day-to-day problem-solving. 
         It has been considered a powerful mechanism for hypothetical reasoning in the 
@@ -196,7 +273,7 @@
              <p class="title" onclick="toggleDetails('pub5')">Human-like rule learning from images
               using one-shot hypothesis derivation</p>
              <div class="details" id="pub5">
-                 <p><strong>Authors:</strong> <b> Dany Varghese</b>,Roman Bauer, Daniel Baxter-Beard, Stephen Muggleton, Alireza Tamaddoni-Nezhad </p>
+                 <p><strong>Authors:</strong> <b> Dany Varghese</b>,Roman Bauer, Daniel Baxter-Beard, Stephen Muggleton and Alireza Tamaddoni-Nezhad </p>
                  <p style="text-align: justify;"><strong>Abstract:</strong> 
          Unlike most computer vision approaches, which depend on hundreds or thousands of 
          training images, humans can typically learn from a single visual example. 
@@ -228,7 +305,7 @@
             <p class="title" onclick="toggleDetails('pub6')">
 One-shot rule learning for challenging character recognition</p>
             <div class="details" id="pub6">
-                <p><strong>Authors:</strong> <b> Dany Varghese</b>, Alireza Tamaddoni-Nezhad </p>
+                <p><strong>Authors:</strong> <b> Dany Varghese</b> and  Alireza Tamaddoni-Nezhad </p>
                 <p style="text-align: justify;"><strong>Abstract:</strong> 
         Unlike most of computer vision approaches which depend on hundreds or thousands of 
         training images, humans can typically learn from a single visual example. 

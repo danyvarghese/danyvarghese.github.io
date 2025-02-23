@@ -74,10 +74,93 @@
 
     <!-- Home page content -->
     <div class="container">
-        <div class="update-message">
+        <!--<div class="update-message">
         Please note: This page is to be updated soon with more details.
-    </div>
-   
+        </div>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script>
+        // PDF file URL
+        const pdfUrl = 'CV_Dany_Varghese.pdf'; // Replace with the path to your PDF file
+
+        // Initialize PDF.js
+        let pdfDoc = null;
+        let pageNum = 1;
+        let pageRendering = false;
+        let pageNumPending = null;
+        const scale = 1.5;
+
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        const pdfViewer = document.getElementById('pdf-viewer');
+        pdfViewer.appendChild(canvas);
+
+        // Render a page
+        function renderPage(num) {
+            pageRendering = true;
+            pdfDoc.getPage(num).then((page) => {
+                const viewport = page.getViewport({ scale });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport,
+                };
+                page.render(renderContext).promise.then(() => {
+                    pageRendering = false;
+                    if (pageNumPending !== null) {
+                        renderPage(pageNumPending);
+                        pageNumPending = null;
+                    }
+                });
+            });
+
+            document.getElementById('page-num').textContent = num;
+        }
+
+        // Queue rendering of the next page
+        function queueRenderPage(num) {
+            if (pageRendering) {
+                pageNumPending = num;
+            } else {
+                renderPage(num);
+            }
+        }
+
+        // Show previous page
+        function onPrevPage() {
+            if (pageNum <= 1) return;
+            pageNum--;
+            queueRenderPage(pageNum);
+            updatePagination();
+        }
+
+        // Show next page
+        function onNextPage() {
+            if (pageNum >= pdfDoc.numPages) return;
+            pageNum++;
+            queueRenderPage(pageNum);
+            updatePagination();
+        }
+
+        // Update pagination buttons
+        function updatePagination() {
+            document.getElementById('prev-page').disabled = pageNum <= 1;
+            document.getElementById('next-page').disabled = pageNum >= pdfDoc.numPages;
+        }
+
+        // Load PDF document
+        pdfjsLib.getDocument(pdfUrl).promise.then((pdfDoc_) => {
+            pdfDoc = pdfDoc_;
+            document.getElementById('page-count').textContent = pdfDoc.numPages;
+            renderPage(pageNum);
+            updatePagination();
+        });
+
+        // Event listeners for navigation buttons
+        document.getElementById('prev-page').addEventListener('click', onPrevPage);
+        document.getElementById('next-page').addEventListener('click', onNextPage);
+    </script>
     </div>
 
 </body>

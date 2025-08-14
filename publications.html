@@ -85,7 +85,7 @@
              <div class="details" id="pub20241">
                  <p><strong>Authors:</strong> Alfie Anthony Treloar,  <b>Dany Varghese</b, Shubhi Verma, Alireza Tamaddoni-Nezhad and Alan Hunter 
                  </p>
-                 <p style="text-align: justify;"><strong>Abstract:</strong> "One-shot learning" traditionally 
+                 <p style="text-align: justify;"><strong>Abstract:</strong> 
              
                      This paper presents preliminary work on integrating symbolic learning and reasoning into autonomous maritime systems using inductive logic programming (ILP). 
                      A key challenge in operationalising ILP is bridging the gap between continuous sensing and actuation data and discrete symbolic logic. 
@@ -93,6 +93,7 @@
                      Using the ILP system PyGol, we demonstrate the learning of COLREG Rule 13 for overtaking situations from discretised bearing data, and further explore the 
                      learning of an exception to Rule 15 for crossing situations through examples inspired by case law. These results show the potential for interpretable, 
                      legally compliant decision-making and lay the groundwork for learning more complex rules in dynamic maritime environments.
+                     
                 </p>
                  <p><strong>Link:</strong> <a href="" target="_blank">Accepted - The OCEANS 2025 Great Lakes conference </a></p>
              </div> 
@@ -100,11 +101,17 @@
 
 
         <div class="publication">
-             <p class="title" onclick="toggleDetails('pub20252')">Resolving Legal Ambiguities for Safe MASS Navigation: A Socio-Technical Approach Using Human-Machine Learning</p>
+             <p class="title" onclick="toggleDetails('pub20252')">
+                 Resolving Legal Ambiguities for Safe MASS Navigation: A Socio-Technical Approach Using Human-Machine Learning
+             </p>
              <div class="details" id="pub20241">
-                 <p><strong>Authors:</strong> Shubhi Verma,  <b>Dany Varghese</b,Alfie Anthony Treloar, Alan Hunter and  Alireza Tamaddoni-Nezhad
+                 <p>
+                     <strong>
+                         Authors:
+                     </strong> 
+                     Shubhi Verma,  <b>Dany Varghese</b>,Alfie Anthony Treloar, Alan Hunter and  Alireza Tamaddoni-Nezhad
                  </p>
-                 <p style="text-align: justify;"><strong>Abstract:</strong> "One-shot learning" traditionally 
+                 <p style="text-align: justify;"><strong>Abstract:</strong> 
              
                      Maritime Autonomous Surface Ships (MASS) promise to reduce casualty rates and improve operational efficiency, 
                      yet two obstacles impede widespread adoption: the qualitative, often conflicting language of the COLREGs and the opacity of prevailing
@@ -117,6 +124,77 @@
                      inductive logic programming (ILP) and future maritime autonomous systems trials, advancing the IMO goal of “at least equivalent” safety for unmanned vessels.
                 </p>
                  <p><strong>Link:</strong> <a href="" target="_blank">Accepted - The OCEANS 2025 Great Lakes conference </a></p>
+             </div> 
+     </div>
+
+
+        <div class="publication">
+             <p class="title" onclick="toggleDetails('pub20253')">
+                 Symbolic Regression via Inductive Logic Programming: An Explainable Alternative to Black-Box Models
+             </p>
+             <div class="details" id="pub20241">
+                 <p>
+                     <strong>
+                         Authors:
+                     </strong>  
+                     <b>Dany Varghese</b> and  Alireza Tamaddoni-Nezhad
+                 </p>
+                 <p style="text-align: justify;">
+                     <strong>
+                         Abstract:
+                     </strong> 
+             
+                     This paper introduces a symbolic regression framework based on Inductive Logic Programming (ILP) to address the growing demand for interpretable 
+                     machine learning models in sensitive and regulation-intensive domains. Unlike black-box regressors such as ensemble methods or neural networks, 
+                     our approach learns human-readable rules that explain how input features relate to output predictions using logic-based representations. 
+                     We leverage the PyGol, a novel ILP system, to perform multi-class symbolic regression through a one-vs-rest strategy, where continuous targets 
+                     are either preserved or discretised into symbolic labels. Each label is represented by a distinct set of logic rules defined over feature intervals, 
+                     facilitating transparent and modular reasoning. A Bayesian-inspired scoring mechanism extends inference to noisy or partially matching instances, 
+                     enhancing robustness. Through empirical evaluations on benchmark regression datasets, we demonstrate that PyGol achieves competitive predictive 
+                     performance compared to state-of-the-art regressors while offering superior transparency and traceability. We further present sample learned 
+                     rules and interpret their behaviour, highlighting the system's explanatory potential. This work affirms the value of ILP-based symbolic models as 
+                     viable alternatives to black-box approaches, particularly where accountability and decision interpretability are paramount.
+                     
+                </p>
+                 <p><strong>Link:</strong> <a href="" target="_blank">Accepted - IJCLR 2025 </a></p>
+             </div> 
+     </div>
+
+
+        <div class="publication">
+             <p class="title" onclick="toggleDetails('pub20254')">
+                 Explainable and Verifiable ASD Detection via Inductive Logic Programming: A Comparative Study with SHAP and LIME
+             </p>
+             <div class="details" id="pub20241">
+                 <p>
+                     <strong>
+                         Authors:
+                     </strong>  
+                     Awathy Willson, J Anitha and <b>Dany Varghese</b> 
+                 </p>
+                 <p style="text-align: justify;">
+                     <strong>
+                         Abstract:
+                     </strong> 
+             
+                     Autism Spectrum Disorder (ASD) diagnosis relies on integrating heterogeneous behavioral 
+                    and cognitive indicators, demanding AI systems that are not only accurate but also 
+                    interpretable and verifiable. In this study, we present an explainable ASD detection 
+                    framework based on Inductive Logic Programming (ILP), using phenotypic data from the 
+                    ABIDE dataset. Unlike black-box models, ILP produces symbolic rules in first-order logic, 
+                    supporting clinical transparency and auditability. We evaluate ILP against standard machine learning models (e.g., Random Forest, SVM, 
+                    Gradient Boosting) using 10-fold cross-validation and report competitive accuracy, 
+                    with ILP demonstrating superior specificity and high precision—critical metrics in 
+                    clinical screening. We further compare the interpretability of ILP explanations with 
+                    state-of-the-art post-hoc methods, SHAP and LIME, using a held-out test instance. 
+                    While all methods identify consistent predictive features, ILP offers globally 
+                    consistent, human-readable rules that are more accessible to non-expert users. Our findings affirm ILP as a viable and trustworthy alternative for ASD classification, 
+                    providing both predictive utility and symbolic transparency. Future work will extend 
+                    this approach to incorporate fMRI-derived features, enabling richer multimodal 
+                    reasoning in neurodevelopmental diagnostics.
+                     
+                </p>
+                 <p><strong>Link:</strong> <a href="" target="_blank">Accepted - IJCLR 2025 </a></p>
              </div> 
      </div>
     
